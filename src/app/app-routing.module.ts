@@ -9,9 +9,13 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EligibilitycalculatorComponent } from './eligibilitycalculator/eligibilitycalculator.component';
-import { IncomeDetailsComponent } from './income-details/income-details.component';
-import { PropertyDetailsComponent } from './property-details/property-details.component';
+//import { IncomeDetailsComponent } from './incomedetails/incomedetails.component';
+//import { PropertyDetailsComponent } from './property-details/property-details.component';
 import { ApplyNowComponent } from './apply-now/apply-now.component';
+import { IncomedetailsComponent } from './incomedetails/incomedetails.component';
+import { PropertydetailsComponent } from './propertydetails/propertydetails.component';
+//import { PropertyDetailsComponent } from './property-details/property-details.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 
 
@@ -28,8 +32,9 @@ const routes: Routes = [
   {path: 'contactus',component: ContactusComponent },
   {path:'dashboard', component: DashboardComponent},
   {path:'eligibilitycalculator', component: EligibilitycalculatorComponent},
-  {path:'income-details', component: IncomeDetailsComponent},
-  {path:'property-details', component: PropertyDetailsComponent}
+  {path:'incomedetails', component: IncomedetailsComponent},
+  {path:'propertydetails', component: PropertydetailsComponent},
+  {path:'adminlogin', component:  AdminloginComponent}
 
   
 ];

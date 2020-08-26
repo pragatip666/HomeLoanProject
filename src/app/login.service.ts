@@ -15,10 +15,10 @@ export class LoginService {
 
   constructor(private http:HttpClient) { }
   loggingin(login: Login){
-    let url='http://localhost:8585/login';
+    let url='http://localhost:8090/login';
     return this.http.post(url,login);
   }
   public adminlogin(admin:Admin){
-    return this.http.post("http://localhost:4204/api/AdminPage",admin);
+   return this.http.post("http://localhost:4204/api/AdminPage",admin);
 }
 }

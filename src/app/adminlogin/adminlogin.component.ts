@@ -6,9 +6,9 @@ import {FormGroup,FormControl,Validators} from '@angular/forms';
 import {LoginService} from '../login.service';
 import { Router } from '@angular/router';
 import { SharedService } from '../shared.service';
-//import { CookieService} from 'ngx-cookie-service';
+import { CookieService} from 'ngx-cookie-service';
 @Component({
-  selector: 'app-adminlogin',
+  selector: 'adminlogin',
   templateUrl: './adminlogin.component.html',
   styleUrls: ['./adminlogin.component.css']
 })

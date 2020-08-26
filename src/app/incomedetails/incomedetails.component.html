@@ -1,0 +1,41 @@
+<h2 style="text-align: center;">Add Income Details</h2>
+
+<form (ngSubmit) = "addincome()" enctype="multipart/form-data">
+    <div class="wrap">
+
+    <label for="customerId"><b>CUSTOMER ID</b></label>
+    <input type ="text"  [(ngModel)]=incomeobj.customerId name="customerId"><br />
+    
+    
+    <label for="income"><b>Enter income</b></label>
+    <input type="number"  [(ngModel)]= incomeobj.income name="income"><br />
+
+    
+    <label for="typeOfEmployment"><b>Type of employment</b></label>
+    <input type="text" [(ngModel)]= incomeobj.typeOfEmployment name="typeOfEmployment">  <br/>
+
+    <label for="organizationType"><b>Organization</b></label>
+    <input type="text"  [(ngModel)]= incomeobj.organizationType name="organizationType"> <br/>
+
+
+    <label for="organizationName"><b>organization name</b></label>
+   <input type="text"  [(ngModel)]= incomeobj.organizationName name="organizationName"><br />
+
+
+   <label for="employerName"><b>employer name</b></label>
+    <input type="text" [(ngModel)]= incomeobj.employerName name="employerName"><br />
+
+
+    <label for="amountNeeded"><b>Loan Needed</b></label>
+    <input type="number" [(ngModel)]= incomeobj.amountNeeded name="amountNeeded"><br />
+
+    <label for="tenure"><b>Tenure</b></label>
+    <input type="number"  [(ngModel)]= incomeobj.tenure name="tenure"><br />
+
+    <label for="workingYears"><b>Working years left</b></label>
+   <input type="number" [(ngModel)]= incomeobj.workingYears name="workingYears"><br />
+
+    <button type="submit">Add</button>
+    <button type="reset">Reset</button>
+</div>
+</form>

@@ -1,5 +1,6 @@
 import { FaqsComponent } from './faqs/faqs.component';
-//import {CookieService} from 'ngx-cookie-service';
+import {CookieService} from 'ngx-cookie-service';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
@@ -19,14 +20,17 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { EligibilitycalculatorComponent } from './eligibilitycalculator/eligibilitycalculator.component';
-import { IncomeDetailsComponent } from './income-details/income-details.component';
-import { PropertyDetailsComponent } from './property-details/property-details.component';
+//import { IncomeDetailsComponent } from './income-details/income-details.component';
+//import { PropertyDetailsComponent } from './property-details/property-details.component';
 import { RegisterNavbarComponent } from './register-navbar/register-navbar.component';
 import { ApplyNowComponent } from './apply-now/apply-now.component';
-//import { AdminComponent } from './admin/admin.component';
-//import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { IncomedetailsComponent } from './incomedetails/incomedetails.component';
+import { PropertydetailsComponent } from './propertydetails/propertydetails.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 //import { SelectApplicantsComponent } from './select-applicants/select-applicants.component';
 //import { ShowApplicantsComponent } from './show-applicants/show-applicants.component';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 @NgModule({
@@ -45,12 +49,13 @@ import { ApplyNowComponent } from './apply-now/apply-now.component';
     RegistrationComponent,
     EligibilitycalculatorComponent,
     FaqsComponent,
-    IncomeDetailsComponent,
-    PropertyDetailsComponent,
+    
     RegisterNavbarComponent,
     ApplyNowComponent,
-  //  AdminComponent,
-   // AdminloginComponent,
+    IncomedetailsComponent,
+    PropertydetailsComponent,
+      AdminComponent,
+   AdminloginComponent,
    // SelectApplicantsComponent,
   //  ShowApplicantsComponent
   ],
@@ -59,7 +64,11 @@ import { ApplyNowComponent } from './apply-now/apply-now.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    Ng5SliderModule
+    Ng5SliderModule,
+    ReactiveFormsModule,
+   // FormBuilder,
+   // FormGroup,
+   // Validators
   ],
   providers: [],
   bootstrap: [AppComponent]

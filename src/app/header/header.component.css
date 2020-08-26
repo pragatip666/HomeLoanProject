@@ -7,4 +7,8 @@
     margin: auto;
     color:white
   }
- 
+  
+  nav .navbar-nav li{
+    color: white !important;
+    font-size: 25px;
+    }

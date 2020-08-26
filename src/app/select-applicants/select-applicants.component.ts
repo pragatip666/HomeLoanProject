@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
-//import {CookieService} from 'ngx-cookie-service';
+import {CookieService} from 'ngx-cookie-service';
 import {LoginService} from '../login.service';
 import {FormGroup,FormControl, FormControlName} from '@angular/forms';
-import {loanStatus} from './loanStatus';
+import {loanStatus} from './loanStatus;';
 @Component({
   selector: 'app-select-applicants',
   templateUrl: './select-applicants.component.html',

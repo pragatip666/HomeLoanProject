@@ -10,7 +10,7 @@ export class RegistrationService {
   constructor(private http: HttpClient){}
 
   registerCustomer(register: Register){
-    let url='http://localhost:8585/register';
+    let url='http://localhost:8090/register';
     return this.http.post(url,register);
   }
 }

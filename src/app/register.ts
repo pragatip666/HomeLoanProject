@@ -1,11 +1,11 @@
 
 export class Register{
-    name: string;
+    customerName: string;
     email: string;
     dateOfBirth: Date;
     password: string;
     nationality: string;
-    panNo: number;
+    panNo: string;
     aadharNo:number;
     phone:number;
     gender: string;

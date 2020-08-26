@@ -1,0 +1,13 @@
+<p>propertydetails works!</p>
+<h2 style="text-align: center;">Add Property Details</h2>
+
+
+<form (ngSubmit) = "addproperty()" enctype="multipart/form-data">
+    <div class="wrap">
+    <b>Enter your loan Id</b><input type ="number" placeholder="Enter Loan Id" [(ngModel)]=property.loanId name="loanId"><br />
+    <b>Enter Property Name</b><input type ="text" placeholder="Enter property name" [(ngModel)]=property.propertyName name="propertyName"><br />
+    <b>Enter Property evaluation estimated Amount</b><input type ="number" placeholder="Enter estimated value" [(ngModel)]=property.estimatedAmount name="estimatedAmount"><br />
+    <b>Enter Property Location</b><input type ="text" placeholder="Enter location" [(ngModel)]=property.propertyLocation name="propertyLocation"><br />
+    <button type="submit">ADD DETAILS</button>
+</div>
+</form>
