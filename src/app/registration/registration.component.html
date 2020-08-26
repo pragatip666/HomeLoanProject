@@ -1,0 +1,11 @@
+<p>registration works!</p>
+<form (ngSubmit)="registration()">
+    Enter Name :<input type="text" name="name" [(ngModel)]=register.name /> <br />
+    Enter Email id: <input type="text" name="email" [(ngModel)]=register.email /><br />
+    Enter Date of Birth: <input type="date" name="dob" [(ngModel)]=register.dateOfBirth /> <br />
+    Enter Password: <input type="password" name="pwd" [(ngModel)]=register.password /><br/>
+    <button type="submit">Register</button>
+</form>
+
+<h1 *ngIf="status">{{ status.status }}</h1>
+

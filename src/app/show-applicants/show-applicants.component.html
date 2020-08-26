@@ -1,0 +1,143 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/admin">Back to home</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+      </div>
+  </nav>
+<section>
+    <br>
+<h3><b>View Submitted Applications</b></h3>
+
+     <i>Click, to view Customers' Submmitted Applications.. &nbsp;</i> 
+<button Class="btn btn-danger btn-sm" (click)="fetchApplications()"> Click To View </button><br>
+<hr color="black">
+<nav class="navbar navbar-expand-sm bg-light">
+    <ul class="navbar-nav">
+    
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/admin"><b>Back To Home</b></a></li>
+    </ul>
+      </nav>
+
+
+
+</section>
+
+<br/><br/><br/>
+<div *ngFor="let m of applications">
+    <br>
+    <b><i><li>Customer Details :</li></i></b>
+
+    <table>
+        <tr>
+            <th>customerName</th>
+            <th>personalDetailsID</th>
+            <th>dateOfBirth</th>
+            <th>customerId</th>
+            <th>phoneNo</th>
+            <th>gender</th>
+            <th>nationality</th>
+            <th>aadharNo</th>
+            <th>panNo</th>
+            <th>emailId</th>
+            
+        </tr>
+        <tr>
+            <td>{{m.customerName}}</td>
+            <td>{{m.personalDetailsID}}</td>
+            <td>{{m.dateOfBirth}}</td>
+            <td>{{m.customerId}}</td>
+            <td>{{m.phoneNo}}</td>
+            <td>{{m.gender}}</td>
+            <td>{{m.nationality}}</td>
+            <td>{{m.aadharNo}}</td>
+            <td>{{m.panNo}}</td>
+            <td>{{m.emailId}}</td>
+            
+        </tr>
+    </table>
+    <br>
+    <b><li><i>Income Details :</i></li></b>
+     <br><br/>
+     <table>
+        <tr>
+            <th>detailsId</th>
+            <th>typeOfEmployment</th>
+            <th>income</th>
+            <th>organizationType</th>
+            <th>organizationName</th>
+            <th>employeeName</th>
+            <th>customerId</th>
+       
+        </tr>
+        <tr>
+            <td>Rs {{m.income}}</td>
+            <td>{{m.typeOfEmployment}}</td>
+              <td>{{m.detailsId}}</td>
+              <td>{{m.organizationType}}</td>
+            <td>{{m.organizationName}}</td>
+            <td>{{m.employerName}}</td>
+            <td>{{m.customerId}}</td>
+            
+        </tr>
+        
+    </table>
+
+    <br>
+    <b><li><i>Property Details :</i></li></b>
+     <br>
+     <br>
+     <table>
+         <tr>
+             <th>propertyId</th>
+             <th>loanId</th>
+             <th>propertyName</th>
+             <th>estimatedAmount</th>
+             <th>propertyLocation</th>    
+            
+         </tr>
+         <tr>
+             <td>{{m.propertyId}}</td>
+             <td>{{m.propertyName}}</td>
+             <td>Rs {{m.estimatedAmountt}}</td>
+             <td>{{m.loadId}}</td>
+             <td>{{m.propertyLocation}}</td>
+             
+             
+            
+             
+         </tr>
+     </table>
+     <br>
+    <b><li><i>Loan details :</i></li></b>
+     <br>
+     <br>
+     <table>
+         <tr>
+             <th>loanDetailsId</th>
+             <th>amountPassed</th>
+             <th>loanInterest</th>
+             <th>issueDate</th>
+             <th>duration</th>
+             <th>penalty</th>
+             <th>loanId</th>    
+            
+         </tr>
+         <tr>
+             <td>{{m.loanDetailsId}}</td>
+             <td>{{m.amountPassed}}</td>
+             <td>Rs {{m.loanInterest}}</td>
+             <td>{{m.issueDate}}</td>
+             <td>{{m.duration}}</td>
+             <td>{{m.penalty}}</td>
+             <td>{{m.loanId}}</td>
+             
+             
+            
+             
+         </tr>
+     </table>
+    
+<hr color ="blue" size=20px>
+
+</div>

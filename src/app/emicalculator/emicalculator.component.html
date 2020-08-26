@@ -1,0 +1,70 @@
+<div class="outer-container">
+    <div style="text-align: center; color: #000;"><h2>EMI Calculator</h2></div>
+    
+    <div class="left-container">
+        <div class="left-div">
+            <b>Loan Amount</b>
+        </div>
+        <div class="right-div">
+            <input type="text" (blur)="preProcess(0)" size="10"                 
+            [(ngModel)]="query.amount" placeholder="Loan Amount" name="principal.highValue" />      
+
+            <!-- 
+                (blur) is an event binder provided by Angular, just like (click) 
+                which updates the value through the input field without pressing enter. 
+                (click) binder needs the user to press enter in order to submit the value 
+            -->
+
+        </div>
+        <div>
+            <ng5-slider [(value)]="principal.value" [options]="principal_options" (userChangeEnd)="process()"></ng5-slider>
+
+            <!--
+                ng5-slider is a functionality of Ng5SliderModule, which is an enhanced 
+                and much more powerful version of HTML based <input type="range"...>
+                Introduced Angular version 5.0 onwards, eliminates the need of deploying 
+                basic CSS which becomes imperitive in case of HTML's range type input.
+
+                It can have multiple slider-handles on the same slider, through which a
+                range can be privided as an input instead of a single value.
+            -->
+
+        </div>
+
+        <div class="left-div">
+            <b>Tenure</b>
+        </div>
+        <div class="right-div">
+            <input type="text" (blur)="preProcess(1)" size="10"
+            placeholder="Loan Tenure" [(ngModel)]="query.tenureYr" name="tenureInYears.value">
+        </div>
+        <div>
+            <ng5-slider [(value)]="tenureInYears.value" [options]="tenure_options" (userChangeEnd)="process()"></ng5-slider>
+        </div>
+
+        <div class="left-div">
+            <b>Rate of Interest</b>
+        </div>
+        <div style="text-align: right; line-height: 50px">
+            <b>8.5%</b>
+        </div>
+    </div>
+    
+    <div class="right-container">
+        <div><b>Loan EMI</b></div> <br>
+        <div>{{ result.emi || "--" }}</div> <br><br>             
+        
+        <!-- 
+            '||' this is called DecimalPipe, another exclusive feature of Angular.
+            It is used for number formatting by converting the number into a string 
+            and then transforming it according to the rules specified. 
+        -->
+
+        <div><b>Total Interest Payable</b></div> <br>
+        <div>{{ result.interest || "--" }}</div> <br><br>
+
+        <div><b>Total Payment</b></div> <br>
+        <div>{{ result.total || "--" }}</div> <br>
+    </div>
+</div>
+
