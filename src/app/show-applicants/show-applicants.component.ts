@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormControl, FormControlName} from '@angular/forms';
-import {LoginService} from '../login.service';
+import {LoginService} from '../login.service'
 import { Router } from '@angular/router'; 
 import {CookieService} from 'ngx-cookie-service';
 
@@ -23,7 +23,7 @@ export class ShowApplicantsComponent implements OnInit {
   logout()
   {
     this.cookie.delete('username');
-    this.routes.navigate(['/admin']);
+    this.routes.navigate(['/administrator']);
   }
 
   ngOnInit(): void {
