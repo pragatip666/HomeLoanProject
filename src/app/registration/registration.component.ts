@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { RegisterService } from './../register.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -15,14 +16,14 @@ import { Component, OnInit } from '@angular/core';
 export class RegistrationComponent {
   customer: Customer = new Customer();
 
-  constructor(private customerService: RegisterService) { }
+  constructor(private customerService: RegisterService, private router: Router) { }
 
   register() {
-    //alert(JSON.stringify(this.customer));
+    alert("You have been registered!!");
     this.customerService.register(this.customer).subscribe(data => {
       //alert(JSON.stringify(data));
       if(data.status == 'SUCCESS') {
-       // this.router.navigate(['thankyou'])
+       this.router.navigate(['login'])
       }
       else {
         //missing code right now
