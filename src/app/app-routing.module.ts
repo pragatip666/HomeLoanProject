@@ -16,7 +16,10 @@ import { IncomedetailsComponent } from './incomedetails/incomedetails.component'
 import { PropertydetailsComponent } from './propertydetails/propertydetails.component';
 //import { PropertyDetailsComponent } from './property-details/property-details.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
-
+import { AdministratorComponent } from './administrator/administrator.component';
+import { AdminComponent } from './admin/admin.component';
+import { ShowApplicantsComponent } from './show-applicants/show-applicants.component';
+import { SelectApplicantsComponent } from './select-applicants/select-applicants.component';
 
 
 
@@ -34,8 +37,10 @@ const routes: Routes = [
   {path:'eligibilitycalculator', component: EligibilitycalculatorComponent},
   {path:'incomedetails', component: IncomedetailsComponent},
   {path:'propertydetails', component: PropertydetailsComponent},
-  {path:'adminlogin', component:  AdminloginComponent}
-
+  {path:'administrator', component:  AdministratorComponent},
+  {path:'admincomponentd',component:AdminComponent},
+  {path: 'view-applicants', component:ShowApplicantsComponent},
+  {path:'select-applicants', component:SelectApplicantsComponent},
   
 ];
 
