@@ -28,10 +28,12 @@ import { IncomedetailsComponent } from './incomedetails/incomedetails.component'
 import { PropertydetailsComponent } from './propertydetails/propertydetails.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
-//import { SelectApplicantsComponent } from './select-applicants/select-applicants.component';
-//import { ShowApplicantsComponent } from './show-applicants/show-applicants.component';
+import { SelectApplicantsComponent } from './select-applicants/select-applicants.component';
+import { ShowApplicantsComponent } from './show-applicants/show-applicants.component';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import { AdministratorComponent } from './administrator/administrator.component';
+//import { ViewApplicantsComponent } from './view-applicants/view-applicants.component';
+//import { ShortlistApplicantsComponent } from './shortlist-applicants/shortlist-applicants.component';
 
 @NgModule({
   declarations: [
@@ -49,15 +51,17 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
     RegistrationComponent,
     EligibilitycalculatorComponent,
     FaqsComponent,
-    
+    AdministratorComponent,
     RegisterNavbarComponent,
     ApplyNowComponent,
     IncomedetailsComponent,
     PropertydetailsComponent,
       AdminComponent,
    AdminloginComponent,
-   // SelectApplicantsComponent,
-  //  ShowApplicantsComponent
+  // ShortlistApplicantsComponent,
+   //ViewApplicantsComponent,
+   SelectApplicantsComponent,
+  ShowApplicantsComponent
   ],
   imports: [
     BrowserModule,

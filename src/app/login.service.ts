@@ -12,6 +12,8 @@ import { LoginStatus } from './loginstatus';
 })
 export class LoginService {
   getApplications: any;
+  changeLoanStatus: any;
+  showLoan: any;
 
   constructor(private http:HttpClient) { }
   loggingin(login: Login){

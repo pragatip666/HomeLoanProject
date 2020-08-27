@@ -21,7 +21,7 @@ export class AdminComponent implements OnInit {
     this.adminEmail=this.service.getadminEmail();
     if(this.adminEmail==null)
     {
-      this.routes.navigate(["/adminlogin"]);
+      this.routes.navigate(["/administrator"]);
     }
   }
 
