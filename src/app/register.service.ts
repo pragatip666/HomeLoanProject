@@ -1,3 +1,4 @@
+//import { RegisterService } from './register.service';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 //import { Customer } from './applynow/applynow.component';

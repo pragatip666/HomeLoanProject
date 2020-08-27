@@ -8,15 +8,18 @@
     
     
     <label for="income"><b>Enter income</b></label>
-    <input type="number"  [(ngModel)]= incomeobj.income name="income"><br />
+    <input type="number"  [(ngModel)]= incomeobj.income name="income"><br /> <br />
 
     
     <label for="typeOfEmployment"><b>Type of employment</b></label>
-    <input type="text" [(ngModel)]= incomeobj.typeOfEmployment name="typeOfEmployment">  <br/>
+    <input type="radio" [(ngModel)]=incomeobj.typeOfEmployment value="SALARIED"> SALARIED
+    <input type="radio"[(ngModel)]=incomeobj.typeOfEmployment value="SELF"> SELF
+    <br /> <br />
 
-    <label for="organizationType"><b>Organization</b></label>
-    <input type="text"  [(ngModel)]= incomeobj.organizationType name="organizationType"> <br/>
-
+    <label for="organizationType"><b>Organization Type</b></label>
+    <input type="radio" [(ngModel)]=incomeobj.organizationType value="Private"> PRIVATE
+    <input type="radio"[(ngModel)]=incomeobj.organizationType value="Public"> PUBLIC
+<br /> <br />
 
     <label for="organizationName"><b>organization name</b></label>
    <input type="text"  [(ngModel)]= incomeobj.organizationName name="organizationName"><br />
