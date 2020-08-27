@@ -1,11 +1,17 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="container">
-            <ul><li><a href="/home"><i class="fa fa-user-circle" style="padding-left:80%"></i> back to home</a></li>
-              <li> <a href="/administrator"><i class="fa fa-user-circle" style="padding-left:80%"></i>Logout</a></li>
+<nav class="navbar navbar-expand-lg navbar light">
+    <div class="top">
+        <div class ="container">
+        <div class="t-op row">
+            <div class ="col-sm-6 top-middle">
+            <ul><a href="/home"><i class="fa fa-user-circle" style=padding:5%></i> back to home</a>
+               <a href="/administrator"><i class="fa fa-user-circle" style="padding:5%"></i>Logout</a>
 
             </ul>
-          </div></div>
+        
+            </div>
+        </div>
+          </div>
+        </div>
   </nav>
 <section>
     <br>
@@ -42,12 +48,12 @@
             <th>personalDetailsID</th>
             <th>dateOfBirth</th>
             <th>customerId</th>
-            <th>phoneNo</th>
+            <th>phone</th>
             <th>gender</th>
             <th>nationality</th>
             <th>aadharNo</th>
             <th>panNo</th>
-            <th>emailId</th>
+            <th>email</th>
             
         </tr>
         <tr>
@@ -75,7 +81,10 @@
             <th>organizationType</th>
             <th>organizationName</th>
             <th>employeeName</th>
+            <th>amountNeeded</th>
+            <th>tenure</th>
             <th>customerId</th>
+            <th>workingYears</th>
        
         </tr>
         <tr>
@@ -85,7 +94,9 @@
               <td>{{m.organizationType}}</td>
             <td>{{m.organizationName}}</td>
             <td>{{m.employerName}}</td>
+            <td>{{m.amountNeeded}}</td>
             <td>{{m.customerId}}</td>
+            <td>{{m.workingYears}}}</td>
             
         </tr>
         
@@ -122,9 +133,10 @@
      <br>
      <table>
          <tr>
-             <th>loanDetailsId</th>
+             <th>LoanDetailsId</th>
+             <th>loanId</th>
              <th>amountPassed</th>
-             <th>loanInterest</th>
+             <th>loanStatus</th>
              <th>issueDate</th>
              <th>duration</th>
              <th>penalty</th>

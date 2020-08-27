@@ -1,0 +1,37 @@
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    overflow-x: hidden;
+	background:#f5f7f8;
+}
+
+body a {
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: circle;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fff;
+}

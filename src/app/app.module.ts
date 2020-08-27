@@ -32,6 +32,9 @@ import { SelectApplicantsComponent } from './select-applicants/select-applicants
 import { ShowApplicantsComponent } from './show-applicants/show-applicants.component';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AdministratorComponent } from './administrator/administrator.component';
+import { LoginService } from './login.service';
+import { SharedService } from './shared.service';
+import { loanStatus } from './loan.status.model';
 //import { ViewApplicantsComponent } from './view-applicants/view-applicants.component';
 //import { ShortlistApplicantsComponent } from './shortlist-applicants/shortlist-applicants.component';
 
@@ -74,7 +77,7 @@ import { AdministratorComponent } from './administrator/administrator.component'
    // FormGroup,
    // Validators
   ],
-  providers: [],
+  providers: [LoginService,SharedService,loanStatus],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
