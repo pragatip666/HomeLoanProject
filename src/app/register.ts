@@ -1,8 +1,9 @@
 
 export class Register{
     customerName: string;
-    email: string;
     dateOfBirth: Date;
+    email: string;
+    
     password: string;
     nationality: string;
     panNo: string;
